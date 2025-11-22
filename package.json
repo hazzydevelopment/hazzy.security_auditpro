@@ -1,0 +1,12 @@
+{
+  "name": "hazzy-security-auditpro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "commonjs",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "axios": "^1.6.7",
+    "whois": "^2.16.0"
+  }
+}
