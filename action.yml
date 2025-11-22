@@ -1,0 +1,23 @@
+name: "Hazzy Security Audit Pro"
+description: "Advanced security audit: headers, SSL, DNS, basic port checks, WAF hints and risk summary."
+author: "hazzy"
+branding:
+  icon: "shield"
+  color: "red"
+
+inputs:
+  url:
+    description: "Website URL or domain (e.g. example.com or https://example.com)"
+    required: true
+  ports:
+    description: "Comma-separated ports to check (default: 22,80,443,3306)"
+    required: false
+    default: "22,80,443,3306"
+
+runs:
+  using: "node20"
+  main: "index.js"
+
+outputs:
+  report:
+    description: "JSON string with the security audit report"
